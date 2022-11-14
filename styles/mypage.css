@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  color: var(--black-3);
+  font-size: 1.2rem;
+}
+
+.mypage_main {
+  width: 1400px;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmm네비게이션 */
+nav.navi_left {
+  width: 200px;
+  margin-left: 0;
+  float: left;
+  left: 0;
+  padding: 10px;
+}
+
+.navi_left ul,
+.navi_left span {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 15px;
+}
+
+.navi_left a {
+  color: black;
+  font-size: 1.0rem;
+}
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmm네비게이션 */
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmm마이페이지 */
+/* 상단메뉴 */
+.mypage {
+  border: solid 1px;
+  width: 80%;
+}
+
+.mypage_profile {
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mypage_profile a {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: black;
+}
+
+/* 중단메뉴 */
+
+.mypage_orderlist {
+  border: solid 1px;
+  height: 30%;
+  display: grid;
+  grid-template-areas:
+    "1 1 1 1"
+    "2 3 4 5 "
+    "2 3 4 5 ";
+}
+
+.mypage_orderlist span {
+  grid-template-areas: 1;
+}
+
+
+/* 하단메뉴 */
+
+
+.mypage_menu {
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+  border: solid 1px;
+  height: 40%;
+}
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmm마이페이지 */
