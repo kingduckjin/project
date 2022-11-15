@@ -24,7 +24,7 @@ nav.navi_left {
 }
 
 .navi_left ul,
-.navi_left span {
+.navi_left span a {
   font-size: 1.5rem;
   font-weight: 900;
   margin: 15px;
@@ -40,7 +40,7 @@ nav.navi_left {
 /* mmmmmmmmmmmmmmmmmmmmmmmmmmm마이페이지 */
 /* 상단메뉴 */
 
-.mypage{
+.mypage {
   width: 80%;
 }
 
@@ -62,10 +62,10 @@ nav.navi_left {
 /* 중단메뉴 */
 
 .mypage_orderlist {
-  border: solid 1px;
+  border: solid 10px #adcdff;
   height: 348px;
   display: grid;
-  grid-template-rows: 60px 240px;
+  grid-template-rows: 60px 288px;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   align-items: center;
@@ -73,20 +73,33 @@ nav.navi_left {
   margin-bottom: 20px;
 }
 
-.mypage_orderlist span {
+.mypage_orderlist>span {
   grid-row: 1/ 1;
   grid-column: 1/ 5;
   font-size: 1.5rem;
   font-weight: bold;
   width: 100%;
-  height: 100%;
   text-align: center;
   line-height: 60px;
-    background-color:#adcdff ;
-    color: white;
+  background-color: #adcdff;
+  color: white;
 }
 
+.mypage_orderlist a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.mypage_orderlist a,
+.mypage_orderlist a>span {
+  color: black;
+  font-weight: 900;
+}
+
+.mypage_orderlist i {
+  margin-bottom: 10px;
+}
 
 /* 하단메뉴 */
 
@@ -101,9 +114,33 @@ nav.navi_left {
   height: 464px;
 }
 
-.mypage_menu span{
-  width: 20px;
-  height: 20px;
+.mypage_menu a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.mypage_menu i {
+  color: #adcdff;
+}
+
+.mypage_menu a {
+  color: black;
+  font-weight: 900;
 }
 
 /* mmmmmmmmmmmmmmmmmmmmmmmmmmm마이페이지 */
+
+
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmHOVER */
+/* mmmmmmmmmmmmmmmmm나중엔 자바스크립트로 하기 */
+.mypage_orderlist a:hover,
+.mypage_menu a:hover {
+  color: #3897f5;
+}
+
+.navi_left a:hover {
+  font-weight: 900;
+}
