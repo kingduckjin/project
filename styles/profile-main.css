@@ -9,7 +9,7 @@ main {
 
 .mypage_main {
   width: 1400px;
-  height: 1200px;
+  height: 1111px;
   display: flex;
   justify-content: center;
 }
@@ -63,7 +63,7 @@ nav.navi_left {
 /* mmmmmmmmmmmmmmmmmmmmmmmmmmm기본회원정보 */
 
 .mypage section {
-  margin-top: 10px;
+  margin-top: 20px;
   border: solid 10px #adcdff;
   box-sizing: border-box;
   height: 348px;
@@ -85,35 +85,66 @@ nav.navi_left {
   font-size: 1.5rem;
 }
 
-.mypage table{
+.mypage table {
   height: 85%;
   width: 100%;
 }
 
-.mypage th{
+.mypage th {
   font-weight: 900;
   background-color: #adcdff;
   color: white;
 }
 
-.mypage td{
+.mypage td {
   padding: 10px;
+}
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmm기본회원정보 */
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmm마일리지&쿠폰 */
+
+.mileage-coupon {
+  margin-top: 20px;
+  width: 100%;
+  height: 300px;
+  border: solid 10px #adcdff;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.mileage-coupon i {
+  color: #adcdff;
+}
+
+.mywallet a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+.mywallet span {
+  font-weight: 900;
 }
 
 
 
-/* mmmmmmmmmmmmmmmmmmmmmmmmmmm기본회원정보 */
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmm마일리지&쿠폰 */
 /* mmmmmmmmmmmmmmmmmmmmmmmmmmm프로필메인 */
 
 
 
 /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmHOVER */
 /* mmmmmmmmmmmmmmmmm나중엔 자바스크립트로 하기 */
-.mypage_orderlist a:hover,
-.mypage_menu a:hover {
-  color: #3897f5;
-}
 
 .navi_left a:hover {
   font-weight: 900;
+}
+
+.mywallet a:hover,
+.mywallet a:hover i {
+  color: #3897f5;
 }
