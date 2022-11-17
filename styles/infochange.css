@@ -262,3 +262,14 @@ fieldset {
   background-color: var(--c-point-h);
   color: var(--white-f);
 }
+
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm도지니 CSS */
+
+#required .newPassword,
+#required .newPasswordCheck,
+#required .newPhoneNb,
+#required .newEmail,
+#required .checkPasswordbox {
+  display: none;
+}
